@@ -156,6 +156,87 @@ h6 {
 
 }
 
+/* Plugin css */
+.overlay-container {
+  height: 370px;
+  position: relative;
+  overflow: hidden;
+ /* display: inline-block;
+  */
+}
+/*Initial overlay setup*/
+.overlay {
+  position: absolute;
+  transition: all .3s ease;
+  opacity: 0;
+  background-color: rgba(37,37,37,.4);
+}
+.overlay.overlay-bottom .text{
+ font-weight: 600;
+}
+/*All overlay fade-in*/
+.overlay-container:hover .overlay {
+  opacity: 1;
+}
+.before-hover img{
+ width: 100%;
+  text-align: center;
+}
+.overlay-bottom {
+  height: 0;
+  width: 100%;
+  bottom: 0;
+  right: 0;
+}
+.fixed-bottom-bar {
+  transition: all .3s ease-out;
+  width: 100%;
+}
+.overlay-container {
+  -webkit-box-shadow: 0px 0px 18px 0px rgba(0,0,0,0.75);
+  -moz-box-shadow: 0px 0px 18px 0px rgba(0,0,0,0.75);
+  box-shadow: 0px 0px 18px 0px rgba(0,0,0,0.75);
+}
+.overlay-container .fixed-bottom-bar {
+  transition: all .3s ease-out;
+  -webkit-box-shadow: 0px 0px 18px 0px rgba(0,0,0,0.45);
+  -moz-box-shadow: 0px 0px 18px 0px rgba(0,0,0,0.45);
+  box-shadow: 0px 0px 18px 0px rgba(0,0,0,0.45);
+}
+.overlay-container:hover .fixed-bottom-bar {
+  transition: all .3s ease-out;
+  opacity: 0;
+}
+.overlay-container:hover .overlay-bottom {
+  height: 100%;
+  color: white;
+  text-align: center;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.before-hover{
+  position: relative;
+  height: 370px;
+  text-align: center;
+}
+.fixed-bottom-bar{
+ position: absolute;
+  bottom: 0;
+  background-color: rgb(255 255 255 / 60%);
+  color: black;
+  padding: 8px;
+}
+.fixed-bottom-bar h4, .fixed-bottom-bar p{
+ margin-bottom: 0px;
+}
+.fixed-bottom-bar p{
+ font-size: 14px;
+}
+/* Plugin css */
+
+
+
 /*--------------------------------------------------------------
 # Back to top button
 --------------------------------------------------------------*/
